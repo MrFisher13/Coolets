@@ -1,0 +1,294 @@
+body {
+  background: #303030;
+}
+.mode_img[data-mode="light"] {
+  display: block;
+}
+.mode_img[data-mode="dark"] {
+  display: none;
+}
+
+:root {
+  --title: rgba(133, 241, 255, 0.785);
+  --item: rgb(214, 214, 214);
+
+  --btn-color: rgb(215, 215, 215);
+  --btn-bg: #181818;
+  --btn-box-shadow: #181818;
+
+  --btn-color-hover-active: #181818;
+  --btn-bg-hover-active: rgba(214, 214, 214, 0.545);
+  --btn-box-shadow-hover-active: rgba(23, 23, 23, 0.545);
+}
+
+/* Media for dark */
+@media (max-width: 992px) {
+  .humb__line {
+    background: var(--btn-bg);
+  }
+  .popup {
+    background: #505050;
+  }
+  .popup .header__logo {
+    color: var(--btn-bg);
+    text-shadow: 3px 3px 3px #7e7e7e;
+  }
+  .popup ul > li > a {
+    color: var(--btn-bg);
+    text-shadow: 3px 3px 3px #7e7e7e;
+  }
+  .popup ul > li > a:hover,
+  .popup ul > li > a:active {
+    color: var(--title);
+    text-shadow: 3px 3px 3px var(--btn-box-shadow);
+  }
+}
+
+/* HEADER */
+.header__logo {
+  color: #ababab;
+}
+.header__menu ul > li > a {
+  color: #ababab;
+}
+.header__menu ul > li > a:hover,
+.header__menu ul > li > a:active {
+  color: #ababab;
+  text-shadow: 2px 2px 3px #bababa;
+}
+.header__button {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow);
+}
+.header__button:hover,
+.header__button:active {
+  color: var(--btn-bg);
+  background: var(--btn-bg-hover-active);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow-hover-active);
+}
+/* INTRO */
+.intro__title {
+  color: var(--title);
+}
+.intro__item {
+  color: var(--item);
+}
+.intro__reservation {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow);
+}
+.intro__reservation:hover,
+.intro__reservation:active {
+  color: var(--btn-color-hover-active);
+  background: var(--btn-bg-hover-active);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow-hover-active);
+}
+/* ABOUT-HOTEL */
+.discription__title {
+  color: var(--title);
+}
+.discription__item {
+  color: var(--item);
+}
+.discription__btn {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow);
+}
+.discription__btn:hover,
+.discription__btn:active {
+  color: var(--btn-color-hover-active);
+  background: var(--btn-bg-hover-active);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow-hover-active);
+}
+/* FOOD */
+.food__title {
+  color: var(--title);
+}
+.food__item {
+  color: var(--item);
+}
+/* ROOMS */
+.rooms__description_title {
+  color: var(--title);
+}
+.rooms__description_item {
+  color: var(--item);
+}
+.rooms__description_btn {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow);
+}
+.rooms__description_btn:hover,
+.rooms__description_btn:active {
+  color: var(--btn-color-hover-active);
+  background: var(--btn-bg-hover-active);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow-hover-active);
+}
+.rooms__title {
+  color: var(--title);
+}
+.rooms__item {
+  color: var(--item);
+}
+.rooms__btn {
+  color: #858585;
+  background: url("../img/arrows/room_arrow-dark.svg") 100px 50% no-repeat;
+}
+.rooms__btn:hover,
+.rooms__btn:active {
+  background: url("../img/arrows/room_arrow-dark.svg") 105px 50% no-repeat;
+  text-shadow: 0px 2px 5px var(--btn-bg);
+}
+/* BOOK */
+.book__subtitle {
+  color: #858585;
+}
+.book__title {
+  color: var(--title);
+}
+.book__item {
+  color: var(--item);
+}
+.book__btn {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow);
+}
+.book__btn:hover,
+.book__btn:active {
+  color: var(--btn-color-hover-active);
+  background: var(--btn-bg-hover-active);
+  box-shadow: 0px 5px 3px var(--btn-box-shadow-hover-active);
+}
+.book__link {
+  color: #858585;
+}
+.book__link:hover,
+.book__link:active {
+  text-shadow: 0px 2px 5px var(--btn-bg);
+}
+.accordion__box {
+  background: rgba(214, 214, 214, 0.545);
+  box-shadow: 0px 0px 30px #181818;
+}
+.accordion__lable {
+  color: #181818;
+}
+.accordion__lable:after {
+  content: "";
+  background: rgb(214, 214, 214);
+  background-image: url("../img/arrows/accordion-arrow_dark-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+}
+.accordion__lable:hover:after {
+  box-shadow: 0 0 30px #181818;
+}
+.accordion__active .accordion__lable:after {
+  content: "";
+  color: rgb(214, 214, 214);
+  background: #181818;
+  background-image: url("../img/arrows/accordion-arrow_up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.accordion__content {
+  color: rgb(214, 214, 214);
+}
+/* WOMEN */
+.customers__section .title {
+  color: var(--title);
+}
+
+.customers__section .customers__items .customers__image:hover {
+  box-shadow: 0px 0px 20px #d8d8d8;
+  transition: .3s linear;
+}
+
+.customers__section .customers__items .customers__text {
+  color: #737373;
+}
+
+.customers__section .customers__items .customers__name {
+  color: rgb(214, 214, 214);
+}
+
+.customers__section .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #595959;
+}
+/* FOOTER */
+.footer {
+  background: #5d5d5d;
+}
+.footer__titel {
+  color: #d0d0d0;
+}
+.footer__item {
+  color: var(--btn-bg);
+}
+.room {
+  color: #f1f1f1d3;
+}
+.room__first {
+  color: var(--title);
+}
+.reservation {
+  color: #f1f1f1d3;
+}
+.reservation__first {
+  color: var(--title);
+}
+.contact {
+  color: #f1f1f1d3;
+}
+.contact__first {
+  color: var(--title);
+}
+/* SCROLL */
+#scrollTop {
+  color: var(--item);
+}
+/* MODE */
+.modes img {
+  box-shadow: 0 0 15px #fff;
+}
+@media (max-width: 1105px) {
+  .intro__item {
+    color: #d7d7d7;
+  }
+}
+
+/* Modal Forma */
+.modal {
+  background: rgba(25, 25, 25, 0.8);
+}
+
+.modal-form {
+  background: #505050;
+}
+.modal-form input {
+  color: #000;
+  background: rgb(163, 163, 163);
+}
+.modal-form input::placeholder {
+  color: #484848b0;
+}
+.modal-form input:focus {
+  box-shadow: 0px 0px 30px #000;
+}
+
+.modal-form__cross {
+  color: rgba(25, 25, 25, 0.8);
+}
+.modal-form__submit {
+  color: #000;
+  background: rgb(163, 163, 163);
+}
+.modal-form__submit:hover {
+  box-shadow: 0px 0px 30px #000;
+}
